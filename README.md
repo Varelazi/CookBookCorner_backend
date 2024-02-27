@@ -1,25 +1,27 @@
-# README
+#CookBook Corner
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Step One
+Make rails app and ensure it's running correctly. 
+```bash
+$ rails new app_name -d postgresql -T
+$ cd app_name
+$ rails db:create
+$ rails server
+```
 
-Things you may want to cover:
+### Step Two
+Connect to Github Repo
+```bash
+$ echo "# CookBookCorner_backend" >> README.md
+$ git init
+$ git add README.md
+$ git commit -m "first commit"
+$ git branch -M main
+$ git remote add origin https://github.com/Varelazi/CookBookCorner_backend.git
+$ git push -u origin main
+```
 
-* Ruby version
+### Step Three
+Create new branch: 
+#### active-record
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# CookBookCorner_backend
